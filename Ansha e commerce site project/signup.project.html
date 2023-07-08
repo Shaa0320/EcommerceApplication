@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        body{
+            font-family: cursive;
+            font-size: medium;
+            background-color: black;
+            color: whitesmoke;
+        }label{
+    padding-left: 30px;
+    font-family: cursive;
+    }#username{
+        width: 220px;
+        height: 30px;
+        border-radius: 5px;
+        color: black;
+        font-size: 16px;
+        border-color: gray;
+        font-family: cursive;
+    }#gmail{
+        width: 220px;
+        height: 30px;
+        border-radius: 5px;
+        color: black;
+        font-size: 16px;
+        border-color: gray;
+        font-family: cursive;}
+        #phone1{
+        width: 220px;
+        height: 30px;
+        border-radius: 5px;
+        color: black;
+        font-size: 16px;
+        border-color: gray;
+        font-family: cursive;}
+        #password{
+        width: 220px;
+        height: 30px;
+        border-radius: 5px;
+        color: black;
+        font-size: 16px;
+        border-color: gray;
+        font-family: cursive;}
+        #CP{
+        width: 220px;
+        height: 30px;
+        border-radius: 5px;
+        color:black;
+        font-size: 16px;
+        border-color: gray;
+        font-family: cursive;}
+    p{
+    font-family: cursive;
+    }
+    button{
+        font-family: cursive;
+        color: black;
+        background-color: white;
+        border-radius: 30%;
+    }#SignIn{
+        font-family: cursive;
+        color: black;
+    }
+    </style>
+</head>
+<script>
+    function user_name(){
+        var username = document.getElementById("username").value;
+        var upper=0;
+        var lower=0;
+        for(var i=0;i<username.length;i++){
+            if((username[i]>='A')&&(username[i]<='Z')){
+                upper++;}
+            else if  ((username[i]>='a')&&(username[i]<='z')){
+                    lower++;}
+            }
+        if((username.length>=6)&&(username.length<=16)&&(upper>=1)&&(lower>=1)&&(special>=1))
+            { document.getElementById("result1").innerHTML="valid username";
+            document.getElementById("result1").style.color="green";}
+            else{ document.getElementById("result1").innerHTML="invalid username";
+            document.getElementById("result1").style.color="red";}
+        }
+        function Email(){
+            var flag=false;
+        var name = document.getElementById("gmail").value;
+        for(var i=0;i<name.length;i++){
+            if(name[i]=='@'){
+                flag=true;}
+                }
+        if(flag==true){
+                document.getElementById("result").innerHTML="valid mail id";
+                document.getElementById("result").style.color="green";
+            }else{ 
+                document.getElementById("result").innerHTML="invalid mail id";
+                document.getElementById("result").style.color="red"}
+            
+        }
+        function Phone(){
+        let num = document.getElementById("phone1").value;
+        if((num>=6000000000)&&(num<=9999999999)){
+            document.getElementById("Phone").innerHTML="valid number";
+            document.getElementById("Phone").style.color="green";
+            
+        }else{
+            document.getElementById("Phone").innerHTML="invalid number";
+            document.getElementById("Phone").style.color="red";
+        } }
+        function Pass(){
+        var password = document.getElementById("password").value;
+        var upper=0;
+        var lower=0;
+        var num=0;
+        var special=0;
+        for(var i=0;i<password.length;i++){
+            if((password[i]>='A')&&(password[i]<='Z')){
+                upper++;}
+                else if((password[i]>='a')&&(password[i]<='z')){
+                    lower++;}
+                    else if((password[i]>='0')&&(password[i]<='9')){
+                        num++;}
+                        else{
+                            special++;}
+        }
+            if((password.length>=6)&&(password.length<=16)&&(upper>=1)&&(lower>=1)&&(num>=1)&&(special>=1))
+            { document.getElementById("result0").innerHTML="strong password";
+        document.getElementById("result0").style.color="green";
+    }
+            else{ document.getElementById("result0").innerHTML="not a strong password";
+            document.getElementById("result0").style.color="red";}
+        }
+        function signup(){
+    window.location.href="signup.project.html";
+}
+</script>
+<body><table>
+    <td style="height: 50%;width: 50%;"><div id="container">
+    <img id="logo" src="./signin.image.jpg" alt="1">
+    <a style="color: black;font-family: cursive;border-top-right-radius: 0%;"><br>
+    <td><label>User Name :</label>
+        <input type="username"  placeholder="Username" id="username">
+    <button onclick="user_name()">next</button>
+    <p id="result1"></p><br>
+    <label>Email :</label>
+    <input type="text" placeholder="email" id="gmail">
+    <button onclick="Email()">otp</button><br>
+    <p id="result"></p><br>
+    <label>Phone :</label>
+    <input type="text" placeholder="number" id="phone1">
+    <button onclick="Phone()">otp</button><br>
+    <p id="Phone"></p><br>
+    <label>Password :</label>
+    <input type="text" placeholder="password" id="password">
+    <button onclick="Pass()">check</button><br>
+    <p id="result0"></p><br>
+    <label for="password">Confirm Password :</label>
+    <input type="password" placeholder="Confirm Password"id="CP"><br>
+    <div><br>
+        <form action="./login.project.html">
+    <br><button class="btn btn-info" onclick="signup()">Signup</button>
+    <br>
+</form></table>
+</body>
+</html>

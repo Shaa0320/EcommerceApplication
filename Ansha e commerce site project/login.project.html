@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-3.4.1-dist/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <style>
+    body{
+        font-size: medium;
+        font-family: cursive;
+        background-color:white
+    }
+    .login{
+        margin-top: 100px;
+        font-size: 20px;
+        font-family: cursive;
+        padding-top: 70px;
+        padding-left: 40px;
+        width: 450px;
+        height: 400px;
+        color: black;
+    }#password{
+        width: 220px;
+        height: 30px;
+        border-radius: 5px;
+        color: gray;
+        font-size: 16px;
+        border-color: black;
+        font-family: cursive;
+    } #user_name{
+        width: 220px;
+        height: 30px;
+        border-radius: 5px;
+        color: gray;
+        font-size: 16px;
+        border-color: black;
+        font-family: cursive;
+    }  label{
+    padding-left: 30px;
+    font-family: cursive;
+    }button{
+    height: 30px;
+    width: 90px;
+    border-radius: 10%;
+    background-color: green;
+    color: aliceblue;
+    margin-left: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+    }
+    p{
+    font-family: cursive;
+    }
+    #forget{
+        cursor: pointer;
+        color: blue;
+    }.image{
+    height: 600px;
+    display: 50px;
+    flex-direction: row;
+    }
+    </style>
+</head>
+<script>
+    function next(){
+        var db={'Anusha':'Anu$#@03','Ajee':'Ajee@29','Batman':'batsy@gotham.com'};
+        var user_name=document.getElementById("user_name").value;
+        var password=document.getElementById("password").value;
+        var key_array=Object.keys(db);
+        var flag=false;
+    for(var i=0;i<=key_array.length;i++){
+        if(key_array[i]==user_name){
+            if(db[key_array[i]]==password){
+                flag=true;
+            }
+        }
+    }
+    if(flag==true){
+        window.location.href="homepage.project.html";
+    }
+    else{
+        document.getElementById("result").innerHTML="Invalid user name or invalid details";
+        document.getElementById("result").style.color="red";
+    }
+}
+function signup(){
+    window.location.href="signup.project.html";
+}
+function forget(){
+window.location.href="forgotpass.project.html";   
+}
+</script>
+<body>
+    <table>
+    <td style="height: 80%;width: 50%;padding: 10px;"><div id="container"></div>
+        <img id="logo" src="./login.image.jpg" alt="">
+        <td>
+    <div class="login"><a style="padding: 1px;">
+    <label>User Name :</label>
+    <input type="text" placeholder="User Name" id="user_name">
+    <br>
+    <br>
+    <label>Password :</label>
+    <input type="password" placeholder="Password" id="password">
+    <br><br>
+    <button class="btn btn-info" onclick="next()">Login</button>
+    <p id="result"></p>
+    <p onclick="forget()" id="forget">forget password</p>
+    <p>Are You New User? <button class="btn btn-info" onclick="signup()">Signup</button></p>
+    </div></td>
+    </form>
+<script src="bootstrap-3.4.1-dist/bootstrap-3.4.1-dist/js/jquery.min.js"></script>
+<script src="bootstrap-3.4.1-dist/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

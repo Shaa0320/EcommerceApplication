@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./p.bootstrap.min.css">
+    <style>
+    header {
+    background-color:grey;
+    padding: 10px;
+    color: white;
+    }
+    nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .logo img {
+    width: 150px;
+    }.user-options p {
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+    font-family: cursive;
+    }video {
+width: 100%;
+max-width: 600px;
+}.prod{
+margin:30px
+    }
+    footer {
+    background-color: rgb(61, 61, 61);
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+    }
+    </style>
+</head>
+<script>
+function Products(){
+    let choice = document.getElementById("option").value;
+    if(choice=="Accessories"){
+        window.location.href="./accessories.project.html";
+    }else if(choice=="Consoles"){
+        window.location.href="./console.project.html";
+    }else if(choice=="VR Boxes"){
+        window.location.href="./vr.project.html";
+    }
+}function pay(){
+    window.location.href="payment.project.html";
+}
+</script>
+<body>
+    <header>
+        <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="header">
+            <p style="font-family: cursive;font-size: 60px;color: black;">MY CART</p>
+        </div>
+        <div class="user-options">
+            <select name= ""id="option" style="background-color: black;border-color: white;">
+            <option value="Accessories">ACCESSORIES</option>
+            <option value="Consoles">CONSOLES</option>
+            <option value="VR Boxes">VR BOXES</option>
+        </select>
+        <button onclick="Products()" style="background-color: black;border-color: white;">NEXT</button>
+            <a href="homepage.project.html" style="color: black; font-family: cursive;">Home</a>
+        </div>
+        </nav>
+    </header> <section class="products" id="pro" style="background-color: white;">
+        <h1 style="font-family: cursive;color: black;">Shopping Cart</h1>
+        <div class="product-list">
+            <div class="container" id="prod">
+                <div class="row">
+                    <div class="col-md-12 well" id="20"><table><td>
+                        <img src="md.webp" alt="action-figure" style="width:42%">
+                        <img src="md1.webp" alt="action-figure" style="width:42%">
+            <h3>Master & Dynamic MG20 wireless gaming headphones provide immersive sound and 50 mm drivers</h3>
+            <p style="font-size: large;color:lightskyblue;font-family:'Arial Narrow Bold', sans-serif;">Wireless and fully equipped</p>
+            <p class="price" style="color:blue;font-family:Arial, Helvetica, sans-serif;">$299.58 Shipping & Import Fees Deposit to India</p>
+            <p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;">$449 </p>
+            <a href="https://www.master&dynamic.com">Visit the Master & Dynamic Store</a><br>
+            <br>
+            <p>Platforms : Pc & Playstation</p>
+            <div class="user-options1">
+                <select name= ""id="option1">
+                <option value="1">Qty:1</option>
+                <option value="2">Qty:2</option>
+                <option value="6">Qty:6</option>
+                <option value="12">Qty:12</option>
+            </select>
+            </td></table>
+                </div>
+                <div class="col-md-12 well" id="12"><table><td>
+                    <img src="htc.jpg" alt="action-figure" style="width:25%">
+                    <img src="htc1.jpg" alt="" style="width:25%">
+                    <img src="htc2.jpg" alt="" style="width:25%">
+                    <img src="htc3.jpg" alt="" style="width:23%">
+    <h3>HTC VIVE Pro 2 Virtual Reality System    </h3>
+    <p style="font-size: large;color:red;font-family:'Arial Narrow Bold', sans-serif;">Only 5 left in stock - order soon  </p>
+    <p class="price" style="color:blue;font-family:Arial, Helvetica, sans-serif;">$299.58 Shipping & Import Fees Deposit to India</p>
+    <p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;">$1,190.00</p>
+    <a href="https://www.htc.com">Visit the HTC Store</a><br>
+    <br>
+    <p>Style: Full System</p>
+    <div class="user-options1">
+        <select name= ""id="option1">
+        <option value="1">Qty:1</option>
+        <option value="2">Qty:2</option>
+        <option value="6">Qty:6</option>
+        <option value="12">Qty:12</option>
+    </select>
+    </td></table>
+            </div>
+            <div class="col-md-12 well" id="9"><table><td>
+                <img src="xbox.jpg" alt="action-figure" style="width:30%">
+                <img src="xbox1.jpg" alt="" style="width:25%">
+                <img src="xbox2.jpg" alt="" style="width:20%">
+                <img src="xbox3.jpg" alt="" style="width:15%">
+<h3>Xbox Series X - Diablo IV® Bundle </h3>
+<p class="price" style="color: red;font-family:Arial, Helvetica, sans-serif;">-1% discount</p>
+<p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;">  $559.99</p>
+<p>M.R.P.: <del> ₹554.390</del></p>
+<a href="https://www.microsoft.com">Brand: Microsoft</a><br>
+<br>
+<p>Platform : Xbox Series X </p>
+<div class="user-options1">
+    <select name= ""id="option1">
+    <option value="1">Qty:1</option>
+    <option value="2">Qty:2</option>
+    <option value="6">Qty:6</option>
+    <option value="12">Qty:12</option>
+</select>
+</td></table></div>
+            </div>
+            </div style="font-family: cursive;font-size: larger;">
+            <label>
+                <input type="checkbox" />
+                Your order is eligible for FREE Delivery. Select this option at checkout.
+            </label>
+            <p style="margin-left: 700px; font-size: large;">Master & Dynamic MG20 wireless =  $499</p>
+            <p style="margin-left: 700px;font-size: large;">HTC VIVE Pro 2 Virtual Reality System = $1,190</p>
+            <p style="margin-left: 700px;font-size: large;">Xbox Series X - Diablo IV® Bundle = $559.99</p>
+            <p style="margin-left: 700px;font-size: large;">Shipping Charge = $599.16</p></div>
+            <p style="font-size: xx-large;color: lightseagreen;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;margin-left:700px;">Subtotal (3 items):   $2,798.15</p>
+            <button class="btn btn-info" onclick="pay()" style="margin-left: 1200px;">Buy Now</button>
+            <p id="result"></p>
+        </section>
+    <footer>
+        <p>&copy; 2023 Discord. All rights reserved.</p>
+    </footer>
+    <script src="./jquery.min.js"></script>
+    <script src="./bootstrap.min.js" ></script>
+    </body>
+    </html>

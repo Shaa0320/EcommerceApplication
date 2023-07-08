@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Discord Homepage</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    body {
+      font-family: cursive;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(61, 61, 61);
+    }
+    header {
+      background-color: rgb(61, 61, 61);
+      padding: 10px;
+      color: black;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo img {
+      width: 150px;
+    }
+    .search-bar input {
+      width: 300px;
+      padding: 5px;
+      font-family: cursive;
+      margin-top: 100px;
+        font-size: 20px;
+        font-family: cursive;
+        color: gray;
+    }
+    .search-bar button {
+      padding: 5px 10px;
+      background-color: #ff9900;
+      color: #ffffff;
+      font-family: cursive;
+      font-size: 20px;
+      width: 100px;
+      margin-top: 100px;
+      cursor: pointer;
+    }
+    .user-options a {
+      color: whitesmoke;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+    .banner img {
+      width: 100%;
+    }
+    .products {
+      padding: 20px;
+    }
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    footer {
+      background-color: #232f3e;
+      padding: 10px;
+      color: #ffffff;
+      text-align: center;
+    }#set{
+height:150px;
+width:150px;
+}
+#table1
+        {
+                border:2px solid black;
+                width:260px;
+                height:500px;
+                margin-left:250px;
+                float:left;
+                background-color: gray;
+        }
+        #tabl1
+        {
+            background-color:gray;
+            height:400px;
+            border-bottom-left-radius:8px;
+            border-bottom-right-radius:8px;
+            color:black;}
+            #table2
+        {
+            border:2px solid black;
+                width:260px;
+                height:500px;
+                background-color: white;
+                margin-right:50px;
+                top:75px;
+                left:540px;
+        }
+        #table3
+        {
+                border:2px solid black;
+                width:260px;
+                height:500px;
+                margin-left:-113px;
+                float:left;
+                background-color: rgb(125, 140, 153);
+        }
+        #tabl3
+        {
+            background-color: rgb(125, 140, 153);
+            height:400px;
+            border-bottom-left-radius:8px;
+            border-bottom-right-radius:8px;
+            color:black;}
+    </style>
+</head>
+<script>
+  function Products(){
+      let choice = document.getElementById("option").value;
+      if(choice=="Accessories"){
+          window.location.href="./accessories.project.html";
+      }else if(choice=="Consoles"){
+          window.location.href="./console.project.html";
+      }else if(choice=="VR Boxes"){
+          window.location.href="./vr.project.html";}
+  }function console(){
+    window.location.href="console.project.html";
+}function vrbox(){
+    window.location.href="vr.project.html";
+}function ass(){
+    window.location.href="accessories.project.html";
+}
+</script>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search products...">
+        <button type="button">Search</button>
+      </div>
+      <div class="user-options">
+        <select name= ""id="option">
+          <option value="Accessories">ACCESSORIES</option>
+          <option value="Consoles">CONSOLES</option>
+          <option value="VR Boxes">VR BOXES</option>
+      </select>
+      <button onclick="Products()">NEXT</button>
+        <a href="profile.project.html">Profile</a>
+        <a href="cart.project.html">Cart</a>
+      </div>
+    </nav>
+  </header>
+  <section class="banner">
+    <img src="discord.png" alt="Banner Image">
+  </section>
+  <section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-list">
+<div id="table1">
+<div id="tabl1">
+<center>
+    <br>
+    <p style="font-size: 20px;font-family:cursive;color: black">Consoles</p>
+    <br><img src="console.home.webp" id="set" class="img-responsive">
+    <br>
+    <p><i class="fa-solid fa-check"></i>Explore the wide range of gaming</p>
+    <p><i class="fa-solid fa-xmark"></i>consoles, video games & accessories.</p>
+    <p><i class="fa-solid fa-xmark"></i>Shop for xbox, playstation 4 (PS4)</p>
+    <p><i class="fa-solid fa-xmark"></i> and more on Discord.in</p>
+    <button class="btn btn-info" onclick="console()">Order NOW!</button>
+</center>
+</div>
+</div>
+<div id="table2">
+        <div id="tabl2">
+        <center>
+            <br>
+            <p style="font-size: 20px;font-family:cursive;color: black;">VR Boxes</p>
+            <br><img src="vr.home.jpg" id="set" class="img-responsive">
+            <br>
+            <p><i class="fa-solid fa-check"></i>Buy VR Box or Headset only at</p>
+            <p><i class="fa-solid fa-xmark"></i> Discord best Online Shopping </p>
+            <p><i class="fa-solid fa-xmark"></i> Store. Explore a wide range of </p>
+            <p><i class="fa-solid fa-xmark"></i> smart glasses from top brands. </p>
+            <button class="btn btn-info" onclick="vrbox()">Order NOW!</button>
+        </center>
+        </div>
+</div>
+<div id="table3">
+    <div id="tabl3">
+    <center>
+        <br>
+        <p style="font-size: 20px;font-family:cursive;color:black;">Accessories</p>
+        <br><img src="accessories.home.jpg" id="set" class="img-responsive">
+        <br>
+        <p><i class="fa-solid fa-check"></i>Explore a wide range of Gaming </p>
+        <p><i class="fa-solid fa-xmark"></i>Accessories Online that include </p>
+        <p><i class="fa-solid fa-xmark"></i>gaming mouse, gaming console, </p>
+        <p><i class="fa-solid fa-xmark"></i>gaming headphones & more at Discord.</p>
+        <button class="btn btn-info" onclick="ass()">Order NOW!</button>
+    </center>
+    </div>
+</div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2023 Discord. All rights reserved.</p>
+  </footer>
+</body>
+</html>

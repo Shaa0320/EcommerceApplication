@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./p.bootstrap.min.css">
+    <style>
+    header {
+    background-color:rgb(54, 70, 80);
+    padding: 10px;
+    color: white;
+    }
+    nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .logo img {
+    width: 150px;
+    }.user-options p {
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+    font-family: cursive;
+    }video {
+width: 100%;
+max-width: 600px;
+}.prod{
+margin:30px
+    } footer {
+    background-color: #232f3e;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+    }
+    </style>
+</head>
+<script>
+function Products(){
+    let choice = document.getElementById("option").value;
+    if(choice=="Accessories"){
+        window.location.href="./accessories.project.html";
+    }else if(choice=="Consoles"){
+        window.location.href="./console.project.html";
+    }else if(choice=="VR Boxes"){
+        window.location.href="./vr.project.html";
+    }
+}
+</script>
+<body>
+    <header>
+        <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="header">
+            <p style="font-family: cursive;font-size: 60px;color: black;">VR BOXES</p>
+        </div>
+        <div class="user-options">
+            <select name= ""id="option">
+            <option value="Accessories">ACCESSORIES</option>
+            <option value="Consoles">CONSOLES</option>
+            <option value="VR Boxes">VR BOXES</option>
+        </select>
+        <button onclick="Products()">NEXT</button>
+            <a href="./cart.project.html">Cart</a>
+        </div>
+        </nav>
+    </header> <section class="products" style="background-color: rgb(61, 61, 61);"><center>
+    <video controls autoplay muted>
+        <source src="vr.vid.mp4" type="video/mp4">
+    </video></center>
+        <h1 style="font-family: cursive;color: white;">Featured Products</h1>
+        <div class="product-list">
+            <div class="container" id="prod">
+                <div class="row">
+                    <div class="col-md-12 well" id="12"><table><td>
+                        <img src="htc.jpg" alt="action-figure" style="width:25%">
+                        <img src="htc1.jpg" alt="" style="width:25%">
+                        <img src="htc2.jpg" alt="" style="width:25%">
+                        <img src="htc3.jpg" alt="" style="width:23%">
+        <h3>HTC VIVE Pro 2 Virtual Reality System    </h3>
+        <p style="font-size: large;color:red;font-family:'Arial Narrow Bold', sans-serif;">Only 5 left in stock - order soon  </p>
+        <p class="price" style="color:blue;font-family:Arial, Helvetica, sans-serif;">$299.58 Shipping & Import Fees Deposit to India</p>
+        <p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;">$1,190.00</p>
+        <a href="https://www.htc.com">Visit the HTC Store</a><br>
+        <br>
+        <p>Style: Full System</p>
+        <p><button>Add to Cart</button></p></td></table>
+                </div>
+                    <div class="col-md-12 well" id="13"><table><td>
+                        <img src="meta.jpg" alt="action-figure" style="width:25%">
+                        <img src="meta1.jpg" alt="" style="width:25%">
+                        <img src="meta2.jpg" alt="" style="width:25%">
+                        <img src="meta3.jpg" alt="" style="width:23%">
+    <h3>Meta Quest 2 — Advanced All-In-One Virtual Reality Headset — 128 GB</h3>
+    <p style="font-size: large;color:lightskyblue;font-family:'Arial Narrow Bold', sans-serif;">In Stock </p>
+    <p class="price" style="color:blue;font-family:Arial, Helvetica, sans-serif;">$158.64 Shipping & Import Fees Deposit to India</p>
+    <p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;">$299.00</p>
+    <a href="https://www.metaquest.com">Visit the Meta Quest Store</a><br>
+    <br>
+    <p>Platform : Meta Quest 2   </p>
+    <p><button>Add to Cart</button></p></td></table>
+                </div>
+                <div class="col-md-12 well" id="14"><table><td>
+                    <img src="psvr.jpg" alt="action-figure" style="width:35%">
+                    <img src="psvr1.jpg" alt="" style="width:20%">
+                    <img src="psvr3.jpg" alt="" style="width:10%">
+                    <img src="psvr2.jpg" alt="" style="width:19%">
+<h3>PlayStation VR2 Horizon Call of The Mountain™ Bundle (PSVR2) </h3>
+<p style="font-size: large;color:lightskyblue;font-family:'Arial Narrow Bold', sans-serif;">In Stock </p>
+<p class="price" style="color:blue;font-family:Arial, Helvetica, sans-serif;">$299.58 Shipping & Import Fees Deposit to India</p>
+<p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;">$599.99</p>
+<a href="https://www.playstation.com">Visit the PlayStation Store</a><br>
+<br>
+<p>Platform : PlayStation 5  </p>
+<p><button>Add to Cart</button></p></td></table>
+            </div>
+            <div class="col-md-12 well" id="15"><table><td>
+                <img src="val.jpg" alt="action-figure" style="width:35%">
+                <img src="val1.jpg" alt="" style="width:25%">
+                <img src="val3.jpg" alt="" style="width:20%">
+                <img src="val2.jpg" alt="" style="width:15%">
+<h3>Valve Index Full VR Kit (Latest Release) (Includes Headset, Base Stations, & Controllers)   </h3>
+<p style="font-size: large;color:lightskyblue;font-family:'Arial Narrow Bold', sans-serif;">In Stock </p>
+<p class="price" style="color:blue;font-family:Arial, Helvetica, sans-serif;">$299.58 Shipping & Import Fees Deposit to India</p>
+<p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;">$1,415.00</p>
+<a href="https://www.valve.com">Visit the Valve Store</a><br>
+<br>
+<p>Platform :  	Meta, Linux, Windows, PlayStation Vita, Windows 10  </p>
+<p><button>Add to Cart</button></p></td></table>
+        </div>
+            </div>
+        </div></section>
+<script src="./jquery.min.js"></script>
+<script src="./bootstrap.min.js" ></script>
+<footer>
+    <p>&copy; 2023 Discord. All rights reserved.</p>
+</footer>
+</body>
+</html>

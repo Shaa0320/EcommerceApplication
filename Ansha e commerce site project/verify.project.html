@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width={device-width}, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./p.bootstrap.min.css">
+    <style>
+        header {
+    background-color:grey;
+    padding: 10px;
+    color: black;
+    }section{
+background-color: white;
+color: black;
+    }
+    nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .logo img {
+    width: 150px;
+    }footer {
+    background-color: rgb(61, 61, 61);
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+    }
+    </style>
+    <script>
+            let otp=Math.floor(Math.random()*999999);
+            alert(otp);
+            function verify_otp()
+        {
+            let user_otp=document.getElementById("otp").value;
+            if(user_otp==otp)
+            {
+                window.location.href="success.project.html";
+            }
+            else
+            {
+                document.getElementById("result").innerHTML="Invalid or incorrect OTP";
+                document.getElementById("result").style.color="red";
+            }
+        }
+        function resend()
+        {
+            window.location.href="verify.project.html";
+        }
+</script>
+</head><body>
+    <header>
+        <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="header">
+            <p style="font-family: cursive;font-size: 60px;color: black;">OTP VERIFICATION</p>
+        </div></nav></header>
+        <section>
+            <h3>PAYMENT VALIDATION</h3>
+            <label>Verification</label>
+    <input type="text" id="otp">
+    <button onclick="verify_otp()">enter</button>
+    <p id="result"></p><br>
+    <p>Click to resend otp?</p>
+    <button onclick="resend()">resend</button></section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; 2023 Discord. All rights reserved.</p>
+    </footer>
+    <script src="./jquery.min.js"></script>
+    <script src="./bootstrap.min.js" ></script>
+    
+</body>
+</html>

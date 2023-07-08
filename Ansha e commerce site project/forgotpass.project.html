@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        font-size: medium;
+        font-family: cursive;
+        background-color:black;
+        color: white;
+    }#E{
+        width: 220px;
+        height: 30px;
+        border-radius: 5px;
+        color:black;
+        font-size: 16px;
+        border-color: gray;
+        font-family: cursive;}
+        #P{
+            width: 220px;
+        height: 30px;
+        border-radius: 5px;
+        color:black;
+        font-size: 16px;
+        border-color: gray;
+        font-family: cursive;
+    }
+    #NP{
+        width: 220px;
+        height: 30px;
+        border-radius: 5px;
+        color:black;
+        font-size: 16px;
+        border-color: gray;
+        font-family: cursive;
+    }#CP{
+        width: 220px;
+        height: 30px;
+        border-radius: 5px;
+        color:black;
+        font-size: 16px;
+        border-color: gray;
+        font-family: cursive;
+    }
+        button{
+    height: 30px;
+    width: 90px;
+    border-radius: 10%;
+    background-color: green;
+    color: aliceblue;
+    margin-left: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+    }img{
+    height: 500px;
+    display: 50px;
+    flex-direction: row;
+    }
+    </style>
+</head>
+<script>
+    function next(){
+    window.location.href="login.project.html";
+}
+</script>
+<body>
+    <table>
+        <form action="./login.project.html">
+                <td style="height: 50%;width: 50%;"><div id="container">
+                <img id="logo" src="./forgotpass.image.jpg" alt="1">
+                <a style="color: black;font-family: cursive;border-top-right-radius: 0%;"><br>
+                    <td>
+            <h3>change password</h3>
+        <label for="Email">Email :</label>
+        <input type="email" placeholder="Email"id="E">
+        <h4>(Or)</h4>
+        <label for="Number">Phone No :</label>
+        <input type="text" placeholder="Phone NUmber"id="P"><br><br>
+        <label for="password">New Password :</label>
+        <input type="password" placeholder="Password"id="NP"><br><br>
+        <label for="password">Confirm Password :</label>
+        <input type="password" placeholder="Confirm Password"id="CP"><br><br>
+        <button class="btn btn-info" onclick="next()">Login</button>
+    <p id="login"></p>
+        <p><input type="reset"><p class="register"></p></td>
+    </form>
+    </table>
+</body>
+</html>

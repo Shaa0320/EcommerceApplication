@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./p.bootstrap.min.css">
+    <style>
+    header {
+    background-color:orange;
+    padding: 10px;
+    color: white;
+    }
+    nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .logo img {
+    width: 150px;
+    }.user-options p {
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+    font-family: cursive;
+    }video {
+width: 100%;
+max-width: 600px;
+}.prod{
+margin:30px
+    } footer {
+    background-color: rgb(61, 61, 61);
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+    }
+    </style>
+</head>
+<script>
+function Products(){
+    let choice = document.getElementById("option").value;
+    if(choice=="Accessories"){
+        window.location.href="./accessories.project.html";
+    }else if(choice=="Consoles"){
+        window.location.href="./console.project.html";
+    }else if(choice=="VR Boxes"){
+        window.location.href="./vr.project.html";
+    }
+}
+</script>
+<body>
+    <header>
+        <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="header">
+            <p style="font-family: cursive;font-size: 60px;color: black;">ACCESSORIES</p>
+        </div>
+        <div class="user-options">
+            <select name= ""id="option" style="background-color: black;border-color: white;">
+            <option value="Accessories">ACCESSORIES</option>
+            <option value="Consoles">CONSOLES</option>
+            <option value="VR Boxes">VR BOXES</option>
+        </select>
+        <button onclick="Products()" style="background-color: black;border-color: white;">NEXT</button>
+            <a href="./cart.project.html" style="color: black;font-family: cursive;">Cart</a>
+        </div>
+        </nav>
+    </header> <section class="products" id="pro" style="background-color: black;"><center>
+    <video controls autoplay muted>
+        <source src="ass.vid.mp4" type="video/mp4">
+    </video></center>
+        <h1 style="font-family: cursive;color: white;">Featured Products</h1>
+        <div class="product-list">
+            <div class="container" id="prod">
+                <div class="row">
+                    <div class="col-md-6 well" id="16"><table><td>
+                        <img src="rtx.webp" alt="action-figure" style="width:50%">
+        <h3>MSI Nvidia GeForce RTX 2080 11GB GDDR6 Graphics Card</h3>
+        <p style="font-size: large;color:red;font-family:'Arial Narrow Bold', sans-serif;">Only 3 left in stock - order soon  </p>
+        <p class="price" style="color:blue;font-family:Arial, Helvetica, sans-serif;">Set an alert to know new updates</p>
+        <p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;">₹1,85,000 </p>
+        <a href="https://www.msi.com">Visit the MSI Store</a><br>
+        <br>
+        <p>Style: Full System</p>
+        <p><button>Add to Cart</button></p></td></table>
+                </div>
+                <div class="col-md-6 well" id="17"><table><td>
+                    <img src="cougar.webp" alt="action-figure" style="width:42%">
+    <h3>Cougar Conquer ATX Gaming Case</h3>
+    <p style="font-size: large;color:red;font-family:'Arial Narrow Bold', sans-serif;">Only 5 left in stock - order soon  </p>
+    <p class="price" style="color:blue;font-family:Arial, Helvetica, sans-serif;">Set an alert to know new updates</p>
+    <p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;">₹57,999 </p>
+    <a href="https://www.cougar.com">Visit the cougar Store</a><br>
+    <br>
+    <p>Style: Full System</p>
+    <p><button>Add to Cart</button></p></td></table>
+            </div>
+            <div class="col-md-6 well" id="18"><table><td>
+                <img src="ps.webp" alt="action-figure" style="width:42%">
+<h3>Logitech G29 Driving Force Racing Wheel and Floor Pedals (PS5/PS4/PS3/PC/Mac)</h3>
+<p style="font-size: large;color:lightskyblue;font-family:'Arial Narrow Bold', sans-serif;">Wireless and fully equipped</p>
+<p class="price" style="color:blue;font-family:Arial, Helvetica, sans-serif;">Set an alert to know new updates</p>
+<p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;">₹29,995 </p>
+<a href="https://www.playstation.com">Visit the Playstation Store</a><br>
+<br>
+<p>Platforms : PS5/PS4/PS3/PC/Mac</p>
+<p><button>Add to Cart</button></p></td></table>
+        </div>
+        <div class="col-md-6 well" id="19"><table><td>
+            <img src="zelda.jpg" alt="action-figure" style="width:32%">
+    <h3>Nintendo Switch Pro Controller - The Legend of Zelda: Tears of the Kingdom Edition(New) </h3>
+    <a href="https://www.sony.com">Brand: Nintendo</a><br>
+    <p class="price" style="color: red;font-family:Arial, Helvetica, sans-serif;">-1% discount</p>
+    <p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;"> ₹8,799</p>
+    <p>M.R.P.: <del>₹8,899</del></p>
+    <p>Platform : PlayStation 4 </p>
+    <p><button>Add to Cart</button></p></td></table></div>
+        <div class="col-md-12 well" id="20"><table><td>
+            <img src="md.webp" alt="action-figure" style="width:42%">
+            <img src="md1.webp" alt="action-figure" style="width:42%">
+<h3>Master & Dynamic MG20 wireless gaming headphones provide immersive sound and 50 mm drivers</h3>
+<p style="font-size: large;color:lightskyblue;font-family:'Arial Narrow Bold', sans-serif;">Wireless and fully equipped</p>
+<p class="price" style="color:blue;font-family:Arial, Helvetica, sans-serif;">$299.58 Shipping & Import Fees Deposit to India</p>
+<p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;">$449 </p>
+<a href="https://www.master&dynamic.com">Visit the Master & Dynamic Store</a><br>
+<br>
+<p>Platforms : Pc & Playstation</p>
+<p><button>Add to Cart</button></p></td></table>
+    </div><div class="col-md-6 well" id="21"><table><td>
+        <img src="xv2.jpg" alt="action-figure" style="width:35%">
+<h3>Microsoft XBOX Play and Charge Kit V2 (TYPE-C)  </h3>
+<a href="https://www.sony.com">Brand: Nintendo</a><br>
+<p class="price" style="color: red;font-family:Arial, Helvetica, sans-serif;">-38% discount</p>
+<p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;"> ₹1,600</p>
+<p style="color: blueviolet;font-size: large;">Inclusive of all taxes</p>
+<p>M.R.P.: <del>₹2,590</del></p>
+<p>Platform : Xbox </p>
+<a href="https://www.microsoft.com" style="color:lightskyblue;font-family:'Arial Narrow Bold', sans-serif;">Brand : Microsoft</a><br>
+<br>
+<p><button>Add to Cart</button></p></td></table></div>
+<div class="col-md-6 well" id="22"><table><td>
+    <img src="nitho.jpg" alt="action-figure" style="width:32%">
+<h3>Nitho Drive Pro V16 Racing Wheel & Pedal Set MLT-DP16-K, Compatible with PC/PS3/PS4/Xbox1/Switch</h3>
+<a href="https://www.sony.com">Brand: Nintendo</a><br>
+<p class="price" style="color: red;font-family:Arial, Helvetica, sans-serif;">-15% discount</p>
+<p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;"> ₹11,000</p>
+<p>M.R.P.: <del>₹12,999</del></p>
+<p>Platform : Nintendo Switch</p>
+<a href="https://www.nitho.com" style="color:lightskyblue;font-family:'Arial Narrow Bold', sans-serif;">Brand : Nitho</a><br>
+<br>
+<p><button>Add to Cart</button></p></td></table></div>
+            </div>
+        </div></section>
+<script src="./jquery.min.js"></script>
+<script src="./bootstrap.min.js" ></script>
+<footer>
+    <p>&copy; 2023 Discord. All rights reserved.</p>
+</footer>
+</body>
+</html>

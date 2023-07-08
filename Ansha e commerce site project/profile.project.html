@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="./bootstrap-3.4.1-dist/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <style>
+        body{
+            background-color: black;
+        }
+#logo{
+height:150px;
+width:150px;
+}.profile {
+  text-align: center;
+  padding: 20px;
+  height:500px ;
+  width:450px ;
+}
+.profile img {
+  width: 150px;
+  border-radius: 50%;
+}
+.profile h1 {
+  font-size:xx-large;
+  margin-top: 10px;
+  color: white;
+  font-family: cursive;
+}
+.profile p {
+  font-size:20px;
+  margin-bottom: 5px;
+font-family: cursive;
+color: white;
+}div.background {
+  background: url(1.png) repeat;
+  border: 2px solid black;
+  height:550px;
+    width: 1345px;
+}
+div.transbox {
+  background-color: black;
+  border: 1px solid black;
+  opacity: 0.9;
+height:550px;
+width:500px;
+margin-right:100px ;
+}div.profile ul{
+  margin: 5%;
+  font-weight: bold;
+  color: white;
+}
+    </style>
+</head>
+<script>  function Products(){
+    let choice = document.getElementById("option").value;
+    if(choice=="Accessories"){
+        window.location.href="accessories.project.html";
+    }else if(choice=="Consoles"){
+        window.location.href="console.project.html";
+    }else if(choice=="VR Boxes"){
+        window.location.href="vr.project.html";
+    }
+} 
+function home(){
+    window.location.href="homepage.project.html";
+}</script>
+<header>
+    <nav>
+    <div class="user-options">
+        <select name= ""id="option">
+        <option value="Accessories">ACCESSORIES</option>
+        <option value="Consoles">CONSOLES</option>
+        <option value="VR Boxes">VR BOXES</option>
+    </select>
+    <button onclick="Products()">NEXT</button>
+    </div>
+    <button class="btn btn-info" onclick="home()" style="margin-left: 1290px;">Home</button>
+    </nav>
+</header>
+<body><center>
+    <div class="background">
+        <div class="transbox">
+        <div class="profile">
+            <img src="pngegg.png" alt="Profile Picture">
+            <h1>Batman</h1>
+            <ul>
+            <p>Email: batsy@gotham.com</p>
+            <p>Phone: 638-007-9059</p>
+            <p>DOB: 03-oct-2000</p>
+            <p>Location: Pondicherry</p>
+            <p>Country: India</p>
+        </ul>
+        </div>
+        </section></center>
+        <center><p style="color: white;font-family: cursive;">&copy; 2023 Discord. All rights reserved.</p></center>
+    </body>
+<script src="./bootstrap-3.4.1-dist/bootstrap-3.4.1-dist/js/jquery.min.js"></script>
+<script src="./bootstrap-3.4.1-dist/bootstrap-3.4.1-dist/js/bootstrap.min.js" ></script>
+</body>
+</html>

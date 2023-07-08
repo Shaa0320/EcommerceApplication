@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./p.bootstrap.min.css">
+    <style>
+    header {
+    background-color: rgb(61, 61, 61);
+    padding: 10px;
+    color: black;
+    }
+    nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .logo img {
+    width: 150px;
+    }.user-options a {
+    color: black;
+    margin-left: 10px;
+    text-decoration: none;
+    font-family: cursive;
+    }video {
+width: 100%;
+max-width: 600px;
+}.prod{
+margin:30px
+    } footer {
+    background-color: #232f3e;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+    }
+    </style>
+</head>
+<script>
+function Products(){
+    let choice = document.getElementById("option").value;
+    if(choice=="Accessories"){
+        window.location.href="./accessories.project.html";
+    }else if(choice=="Consoles"){
+        window.location.href="./console.project.html";
+    }else if(choice=="VR Boxes"){
+        window.location.href="./vr.project.html";
+    }
+}function Colors(){
+    let choice = document.getElementById("option1").value;
+    if(choice=="blue"){
+        window.location.href="./blue.img.jpg";
+    }else if(choice=="coral"){
+        window.location.href="./coral.img.jpg";
+    }else if(choice=="turquoise"){
+        window.location.href="./turquoise.img.jpg";
+    }else if(choice=="Gray"){
+        window.location.href="./gray.img.jpg";}
+}
+</script>
+<body>
+    <header>
+        <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="header">
+            <p style="font-family: cursive;font-size: 60px;color: black;">CONSOLES</p>
+        </div>
+        <div class="user-options">
+            <select name= ""id="option">
+            <option value="Accessories">ACCESSORIES</option>
+            <option value="Consoles">CONSOLES</option>
+            <option value="VR Boxes">VR BOXES</option>
+        </select>
+        <button onclick="Products()">NEXT</button>
+            <a href="./cart.project.html">Cart</a>
+        </div>
+        </nav>
+    </header> <section class="products" style="background-color: black;"><center>
+    <video controls autoplay muted>
+        <source src="console.video.mp4" type="video/mp4">
+    </video></center>
+        <h1 style="font-family: cursive;color: white;">Featured Products</h1>
+        <div class="product-list">
+            <div class="container" id="prod">
+                <div class="row">
+                    <div class="col-md-6 well" id="1"><table><td>
+                        <img src="ps5.img" alt="action-figure" style="width:25%">
+                        <img src="ps5.img1.jpg" alt="" style="width:25%">
+    <h3>Sony PS5 PlayStation Console </h3>
+    <p class="price" style="color:blue;font-family:Arial, Helvetica, sans-serif;">Inclusive of all taxes</p>
+    <p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;"> ₹54,990</p>
+    <a href="https://www.sony.com">Brand: Sony</a><br>
+    <br>
+    <p>Platform : PlayStation 5  </p>
+    <p><button>Add to Cart</button></p></td></table>
+                </div>
+                <div class="col-md-6 well" id="2"><table><td>
+                    <img src="ps5d.img" alt="action-figure" style="width:25%">
+                    <img src="ps5d1.img" alt="" style="width:25%">
+<h3>Sony PS5 Digital Standalone </h3>
+<p class="price" style="color:blue;font-family:Arial, Helvetica, sans-serif;">Inclusive of all taxes</p>
+<p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;"> ₹44,990</p>
+<a href="https://www.sony.com">Brand: Sony</a><br>
+<br>
+<p>Platform : PlayStation 5  </p>
+<p><button>Add to Cart</button></p></td></table>
+            </div>
+            <div class="col-md-12 well" id="3"><table><td>
+                <img src="ps4.img" alt="action-figure" style="width:30%">
+                <img src="ps4.img2.jpg" alt="" style="width:30%">
+                <img src="ps4.img1.jpg" alt="" style="width:30%">
+<h3>Sony PS4 Slim 500 GB Console</h3>
+<a href="https://www.sony.com">Brand: Sony</a><br>
+<br>
+<p class="price" style="color: red;font-family:Arial, Helvetica, sans-serif;">-17% discount</p>
+<p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;"> ₹33,149</p>
+<p>M.R.P.: <del>₹39,990</del></p>
+<p>Platform : PlayStation 4 </p>
+<p><button>Add to Cart</button></p></td></table></div>>
+                    <div class="col-md-12 well" id="4"><table><td>
+                        <img src="old.nin.jpg" alt="action-figure" style="width:30%">
+                        <img src="nin.jpg" alt="" style="width:25%">
+                        <img src="nin1.img" alt="" style="width:15%">
+                        <img src="nin.im.jpg" alt="" style="width:15%">
+    <h3>Nintendo Switch console with Neon Joy VERSION 2 - Controller</h3>
+    <p class="price" style="color: red;font-family:Arial, Helvetica, sans-serif;">-14% discount</p>
+    <p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;"> ₹31,999</p>
+    <p>M.R.P.: <del> ₹36,999</del></p>
+    <p>Platform : Nintendo Switch </p>
+    <p><button>Add to Cart</button></p></td></table><tr>
+                    </div><center><video controls autoplay muted>
+                        <source src="nintendo.vid.mp4" type="video/mp4" style="border-left: 50%;">
+                    </video></tr></center>
+                    <div class="col-md-12 well" id="5"><table><td>
+                        <img src="oled.img" alt="action-figure" style="width:30%">
+                        <img src="oled1.img" alt="" style="width:35%">
+                        <img src="oled2.img" alt="" style="width:15%">
+                        <img src="oled3.img" alt="" style="width:15%">
+    <h3>Nintendo Switch – OLED Model - The Legend of Zelda: Tears of the Kingdom Edition </h3>
+    <p class="price" style="color: red;font-family:Arial, Helvetica, sans-serif;">-24% discount</p>
+    <p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;"> ₹31,999</p>
+    <p>M.R.P.: <del>₹41,999</del></p>
+    <p>Platform : Nintendo Switch </p>
+    <p><button>Add to Cart</button></p></td></table>
+                    </div>
+                    <div class="col-md-12 well" id="6"><table><td>
+                        <img src="pok.img" alt="action-figure" style="width:30%">
+                        <img src="pok1.img" alt="" style="width:35%">
+                        <img src="pok2.img" alt="" style="width:20%">
+                        <img src="pok3.img" alt="" style="width:12%">
+    <h3>Nintendo Switch™ OLED Model Pokémon Scarlet & Violet Edition </h3>
+    <p class="price" style="color: red;font-family:Arial, Helvetica, sans-serif;">-32% discount</p>
+    <p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;"> ₹33,999</p>
+    <p>M.R.P.: <del>₹49,999</del></p>
+    <p>Platform : Nintendo Switch </p>
+    <p><button>Add to Cart</button></p></td></table>
+                    </div>
+                    <div class="col-md-6 well" id="7"><table><td>
+                        <img src="lite.img" alt="action-figure" style="width:25%">
+                        <img src="lite1.img" alt="" style="width:20%">
+                        <img src="lite2.img" alt="" style="width:18%">
+    <h3>Nintendo Switch Lite - Console</h3>
+    <div class="user-options1">
+        <select name= ""id="option1">
+        <option value="blue">BLUE</option>
+        <option value="coral">CORAL</option>
+        <option value="turquoise">TURQUOISE</option>
+        <option value="Gray">GRAY</option>
+    </select>
+    <button onclick="Colors()">NEXT</button>
+    <br>
+    <br>
+    <p class="price" style="color: red;font-family:Arial, Helvetica, sans-serif;">-31% discount</p>
+    <p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;"> ₹18,599</p>
+    <p>M.R.P.: <del> ₹26,999</del></p>
+    <p>Platform : Nintendo Switch </p>
+    <p><button>Add to Cart</button></p></td></table>
+                </div><div class="col-md-6 well" id="8"><table><td>
+                    <img src="sd.jpg" alt="action-figure" style="width:30%">
+                    <img src="sd1.jpg" alt="" style="width:25%">
+                    <img src="sd2.jpg" alt="" style="width:20%">
+<h3>Steam Deck 256GB Console </h3>
+<p class="price" style="color: red;font-family:Arial, Helvetica, sans-serif;">-15% discount</p>
+<p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;">  ₹59,200</p>
+<p class="price" style="color:blue;font-family:Arial, Helvetica, sans-serif;">Inclusive of all taxes</p>
+<p>M.R.P.: <del>  ₹69,999</del></p>
+<a href="https://www.steamdeck.com">Brand: STEAM DECK</a><br>
+<br>
+<p>Platform : Not Machine Specific </p>
+<p><button>Add to Cart</button></p></td></table>
+                </div>
+                <div class="col-md-12 well" id="9"><table><td>
+                        <img src="xbox.jpg" alt="action-figure" style="width:30%">
+                        <img src="xbox1.jpg" alt="" style="width:25%">
+                        <img src="xbox2.jpg" alt="" style="width:20%">
+                        <img src="xbox3.jpg" alt="" style="width:15%">
+    <h3>Xbox Series X - Diablo IV® Bundle </h3>
+    <p class="price" style="color: red;font-family:Arial, Helvetica, sans-serif;">-1% discount</p>
+    <p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;">  ₹59,182</p>
+    <p>M.R.P.: <del> ₹59,990</del></p>
+    <a href="https://www.microsoft.com">Brand: Microsoft</a><br>
+    <br>
+    <p>Platform : Xbox Series X </p>
+    <p><button>Add to Cart</button></p></td></table>
+                    </div><center><video controls autoplay muted>
+                        <source src="xbox.video.mp4" type="video/mp4" style="border-right: 50%;">
+                    </video></tr></center>
+                    <div class="col-md-12 well" id="10"><table><td>
+                        <img src="xboxs.jpg" alt="action-figure" style="width:30%">
+                        <img src="xboxs1.jpg" alt="" style="width:25%">
+                        <img src="xboxs2.jpg" alt="" style="width:20%">
+                        <img src="xboxs3.jpg" alt="" style="width:15%">
+    <h3>Xbox Series S </h3>
+    <p class="price" style="color: red;font-family:Arial, Helvetica, sans-serif;">-22% discount</p>
+    <p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;">  ₹31,149</p>
+    <p>M.R.P.: <del> ₹39,990</del></p>
+    <a href="https://www.microsoft.com">Brand: Microsoft</a><br>
+    <br>
+    <p>Platform : Xbox One </p>
+    <p><button>Add to Cart</button></p></td></table>
+                    </div><center><video controls autoplay muted>
+                        <source src="sd.vid.mp4" type="video/mp4">
+                    </video></center>
+                    <div class="col-md-12 well" id="11"><table><td>
+                        <img src="sd11.jpg" alt="action-figure" style="width:30%">
+                        <img src="sd.jpg" alt="" style="width:25%">
+                        <img src="sd1.jpg" alt="" style="width:20%">
+    <h3>Steam Deck 512GB Console </h3>
+    <p class="price" style="color: red;font-family:Arial, Helvetica, sans-serif;">-15% discount</p>
+    <p style="font-size: large;color: green;font-family:'Arial Narrow Bold', sans-serif;"> ₹69,450</p>
+    <p>M.R.P.: <del>  ₹79,999</del></p>
+    <a href="https://www.steamdeck.com">Brand: STEAM DECK</a><br>
+    <br>
+    <p>Platform : Not Machine Specific </p>
+    <p><button>Add to Cart</button></p></td></table>
+                    </div>
+                </div>
+            </div></section>
+    <script src="./jquery.min.js"></script>
+    <script src="./bootstrap.min.js" ></script>
+    <footer>
+        <p>&copy; 2023 Discord. All rights reserved.</p>
+    </footer>
+</body>
+</html>

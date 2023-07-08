@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./p.bootstrap.min.css">
+    <style>
+    header {
+    background-color:grey;
+    padding: 10px;
+    color: white;
+    }
+    nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .logo img {
+    width: 150px;
+    }
+    footer {
+    background-color: rgb(61, 61, 61);
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+    }
+    </style>
+    <script>function pay(){
+        window.location.href="verify.project.html";
+    }</script>
+    <body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="header">
+            <p style="font-family: cursive;font-size: 60px;color: black;">CHECKOUT</p>
+            </div>
+            </nav></header>
+        <section>
+            <h2>Details required</h2>
+            <br>
+            <label>Delivery address :</label>
+            <input type="text" placeholder="type your address"><br>
+            <br>
+            <label>Country :</label>
+                <select name= ""id="option1">
+                <option value="us">India</option>
+                <option value="uk">United Kingdom</option>
+                <option value="in">United States</option>
+                <option value="j">Japan</option>
+            </select><br>
+            <br>
+            <label>Select a payment method :</label>
+            <br>
+            <input type="radio" name="option" id="op1">Credit or debit card
+            <input type="radio" name="option" id="option1">
+<label for="option1">Rupay</label>
+<input type="radio" name="option" id="option2">
+<label for="option2">Visa</label>
+<input type="radio" name="option" id="option3">
+<label for="option3">Maestro</label></input><br>
+<br>
+            <input type="radio"name="option" id="op2">Net Banking
+            <select name= ""id="option1">
+                <option value="us">Citi Bank</option>
+                <option value="uk">Axis Bank</option>
+                <option value="in">State Bank</option>
+                <option value="j">HDFC Bank</option>
+            </select></input><br>
+            <br>
+            <input type="radio"name="option" id="op3">Other UPI Apps
+            <input type="text" placeholder="Ex:MobileNumber@upi"><button>verify</button><br>
+            <br>
+            <input type="radio"name="option" id="op4">EMI</input>
+            <select name=""><option value="">choose an option</option></select><br>
+            <br>
+            <input type="radio"name="option" id="op5">Cash on Delivery/Pay on Delivery</input><br>
+            <br>
+            <button class="btn btn-success" onclick="pay()">Buy Now</button>
+                <p id="result"></p>
+                <div class="logo" style="width: 500px;">
+                    <img src="pay.it.jpeg" alt="Logo">
+                </div>
+                <div class="section">
+                </div>
+                </nav>
+        </form></section>
+    <footer>
+        <p>&copy; 2023 Discord. All rights reserved.</p>
+    </footer>
+    <script src="./jquery.min.js"></script>
+    <script src="./bootstrap.min.js" ></script>
+    </body>
+    </html>
